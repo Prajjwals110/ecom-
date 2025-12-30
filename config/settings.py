@@ -40,12 +40,20 @@ INSTALLED_APPS = [
 
     #third party apps
     "rest_framework",
+    'django_filters',
 
 
     #local apps
     "apps.accounts",
     "apps.products",
+    "apps.orders",
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': [
+        'django_filters.rest_framework.DjangoFilterBackend',
+    ],
+}
 
 
 AUTH_USER_MODEL = "accounts.User"
@@ -116,7 +124,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "UTC"
+TIME_ZONE = "Asia/Kolkata"
 
 USE_I18N = True
 
