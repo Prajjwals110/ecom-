@@ -1,4 +1,6 @@
-#!/Users/prajjwalsingh/Desktop/ecom/env/bin/python
+#!/bin/sh
+'''exec' "/Users/prajjwalsingh/Desktop/DEMO DRF projects/ecom/env/bin/python3" "$0" "$@"
+' '''
 # -*- coding: utf-8 -*-
 import re
 import sys
